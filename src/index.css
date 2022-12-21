@@ -44,6 +44,11 @@ a {
   font-size: 24px;
 }
 
+.link:hover,
+a:hover {
+  color: red;
+}
+
 header {
   display: flex;
   width: 100vw;
@@ -88,7 +93,7 @@ nav {
 /* Hide most of the box above */
 .innerbox {
   width: 330px;
-  height: 600px;
+  height: 440px;
   margin-left: -10px;
   margin-top: -10px;
   background-color: var(--color-background-lightmode);
