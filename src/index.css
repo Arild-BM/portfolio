@@ -60,6 +60,7 @@ nav {
   cursor: pointer;
 }
 
+/* Colored "border" */
 .uppercorner {
   width: 350px;
   height: 430px;
@@ -84,7 +85,7 @@ nav {
 	}
 }
 
-
+/* Hide most of the box above */
 .innerbox {
   width: 330px;
   height: 600px;
@@ -95,6 +96,7 @@ nav {
   z-index: -2;
 }
 
+/* Corners on colorized box */
 .slantbox {
   width: 200px;
   height: 560px;
@@ -106,6 +108,7 @@ nav {
   rotate: 39deg;
 }
 
+/* Colors for dark mode */
 .dark {
   background-color: var(--color-background-darkmode);
   color: var(--color-text-darkmode);
@@ -139,6 +142,8 @@ footer {
   width: 600px;
 }
 
+
+/* Code for dark switching between dark mode and light mode */
 .toggler {
   display: flex;
   align-items:center;

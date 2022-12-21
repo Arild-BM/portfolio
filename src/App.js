@@ -26,7 +26,8 @@ import userInfo from './data'
 function App() {
 
   const [darkMode, setDarkMode] = useState(true)
-    
+  
+  // Toggle between dark mode and light mode
   function toggleDarkMode() {
       setDarkMode(prevMode => !prevMode)
   }
@@ -45,6 +46,7 @@ function App() {
             <Link className={`link ${darkMode ? "dark": ""}`} to='/Contact'>Kontakt</Link>
             <a className={darkMode ? "dark": ""} href="https://arild-bm.github.io/" target="_blank">GitHub</a>
 
+            {/* Toggle switch in upper right corner */}
             <div className="toggler" >
                 <p className="toggler--light">Light</p>
                 <div className="toggler--slider" onClick={toggleDarkMode} >
