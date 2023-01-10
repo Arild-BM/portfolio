@@ -1,5 +1,6 @@
-import './App.css';
 import Footer from './components/Footer';
+import './index.css';
+import './styles/toggler.css'
 
 // Libraries
 import {
@@ -44,7 +45,7 @@ function App() {
             <Link className={`link ${darkMode ? "dark": ""}`} to='/AboutMe'>Om meg</Link>
             <Link className={`link ${darkMode ? "dark": ""}`} to='/Skills'>Ferdigheter</Link>
             <Link className={`link ${darkMode ? "dark": ""}`} to='/Contact'>Kontakt</Link>
-            <a className={darkMode ? "dark": ""} href="https://arild-bm.github.io/" target="_blank">GitHub</a>
+            <a className={darkMode ? "dark": ""} href="https://arild-bm.github.io/" rel="noreferrer" target="_blank">GitHub</a>
 
             {/* Toggle switch in upper right corner */}
             <div className="toggler" >

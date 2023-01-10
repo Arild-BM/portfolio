@@ -1,9 +1,9 @@
 import React from 'react'
 import Picture from '../../images/portrait.png'
-import styles from './layout.module.css';
+import styles from '../../styles/homePage.module.css';
 
 // Libraries
-import { useContext, useState } from "react"
+import { useContext } from "react"
 
 // Contexts
 import MyContext from "../../contexts/MyContext"
