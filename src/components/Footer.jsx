@@ -9,6 +9,7 @@ export default function Footer(props) {
                 <a className={props.darkMode ? "dark": ""} href="https://arild-bm.github.io/Stavanger/" target="_blank">Visit<br />Stavanger</a>
                 <a className={props.darkMode ? "dark": ""} href="https://arild-bm.github.io/Solsystem/" target="_blank">Solar<br />System</a>
                 <a className={props.darkMode ? "dark": ""} href="https://arild-bm.github.io/Rotating-pictures/" target="_blank">Rotating<br />Pictures</a>
+                <a className={props.darkMode ? "dark": ""} href="https://arild-bm.github.io/christmas-task/" target="_blank">Christmas<br />Countdown</a>
             </div>
         </div>
     )
