@@ -168,6 +168,8 @@ main {
   padding-left: 3.75em;
   padding-top: 3.75em;
   z-index: 0;
+  width: 100vw;
+  border: 2px red solid;
 }
 
 .maintext {
@@ -305,7 +307,7 @@ main {
 
   .maintext {
     padding: 0;
-    width: 100%;
+    width: 80vw;
     z-index: 2;
   }
 
