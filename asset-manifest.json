@@ -1,14 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.e8fa638d.css",
-    "main.js": "/portfolio/static/js/main.26b669ad.js",
-    "static/media/portrait.png": "/portfolio/static/media/portrait.ac8d2285eb0690e9904c.png",
+    "main.css": "/portfolio/static/css/main.10baecd2.css",
+    "main.js": "/portfolio/static/js/main.b7a1437d.js",
+    "static/media/Stavanger1.jpg": "/portfolio/static/media/Stavanger1.1e8dba649fc315a4c96a.jpg",
+    "static/media/Solarsystem.jpg": "/portfolio/static/media/Solarsystem.76d91c38f6bdf7e30451.jpg",
+    "static/media/Christmas.jpg": "/portfolio/static/media/Christmas.82a6c3b52de8de98e678.jpg",
+    "static/media/Stavanger2.jpg": "/portfolio/static/media/Stavanger2.bc4503c63752a0155868.jpg",
+    "static/media/portrait.png": "/portfolio/static/media/portrait.e5e0a2a2f79da497b0f5.png",
+    "static/media/RotatingPictures.jpg": "/portfolio/static/media/RotatingPictures.21f54988275285819a30.jpg",
     "index.html": "/portfolio/index.html",
-    "main.e8fa638d.css.map": "/portfolio/static/css/main.e8fa638d.css.map",
-    "main.26b669ad.js.map": "/portfolio/static/js/main.26b669ad.js.map"
+    "main.10baecd2.css.map": "/portfolio/static/css/main.10baecd2.css.map",
+    "main.b7a1437d.js.map": "/portfolio/static/js/main.b7a1437d.js.map"
   },
   "entrypoints": [
-    "static/css/main.e8fa638d.css",
-    "static/js/main.26b669ad.js"
+    "static/css/main.10baecd2.css",
+    "static/js/main.b7a1437d.js"
   ]
 }
