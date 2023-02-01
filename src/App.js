@@ -1,4 +1,4 @@
-import Footer from './components/Footer';
+import Projects from './components/Projects';
 import './index.css';
 import './styles/toggler.css'
 
@@ -59,29 +59,33 @@ function App() {
         </header>
 
         <main className={darkMode ? "dark": ""}>
-          <div className="uppercorner">
+          <div className="corner corner1"></div>
+          <div className={`innerbox innerbox1 ${darkMode ? "dark": ""}`}></div>
+          <div className={`slantbox slantbox1 ${darkMode ? "dark": ""}`}></div>
+          <div className="flex">
+            <div className="maintext">
+              <Routes>
+                <Route path='/' element={<HomePage />} />
+                <Route path='/AboutMe' element={<AboutMe />} />
+                <Route path='/Skills' element={<Skills />} />
+                <Route path='/GitHub' element={<GitHub />} />
+                <Route path='/Contact' element={<ContactPage />} />
+                            
+                {/* Cathcing all the invalid URLs */}
+                <Route path='*' element={<h1>404 Error</h1>} />
+              </Routes>
+            </div>
+            <div className="border"><div className="corner"></div></div>
+            <div className={darkMode ? "dark": ""}>
+              <div className="projectpage">
+              <Projects darkMode={darkMode} />
+              </div>
+            </div>
           </div>
-          <div className={`innerbox ${darkMode ? "dark": ""}`}>
-          </div>
-          <div className={`slantbox ${darkMode ? "dark": ""}`}>
-          </div>
-          <div className="maintext">
-            <Routes>
-              <Route path='/' element={<HomePage />} />
-              <Route path='/AboutMe' element={<AboutMe />} />
-              <Route path='/Skills' element={<Skills />} />
-              <Route path='/GitHub' element={<GitHub />} />
-              <Route path='/Contact' element={<ContactPage />} />
-                          
-              {/* Cathcing all the invalid URLs */}
-              <Route path='*' element={<h1>404 Error</h1>} />
-            </Routes>
-          </div>
+          <div className="corner corner2"></div>
+          <div className={`innerbox innerbox2 ${darkMode ? "dark": ""}`}></div>
+          <div className={`slantbox slantbox2 ${darkMode ? "dark": ""}`}></div>
         </main>
-
-        <footer className={darkMode ? "dark": ""}>
-          <Footer darkMode={darkMode} />
-        </footer>
       </Router>
     </MyContext.Provider>
   );

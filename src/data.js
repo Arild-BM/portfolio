@@ -16,6 +16,11 @@ const userInfo = {
     skill4: `react`,
     skill5: `IT drift`,
     skill6: `Ledelse`,
+    project1: `Oppgave med "Parallax Website".`,
+    project2: `Oppgave med severdigheter i Stavanger.`,
+    project3: `Gruppeprosjekt høstferie 2022.`,
+    project4: `Oppgave med mer avansert CSS.`,
+    project5: `Juleprosjekt med nedtelling til jul og mulighet for å legge inn julehilsener.`,
 }
 
 export default userInfo
