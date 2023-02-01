@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.dddfe733.css",
-    "main.js": "/portfolio/static/js/main.7cce6748.js",
+    "main.css": "/portfolio/static/css/main.f141eb50.css",
+    "main.js": "/portfolio/static/js/main.cf756a3f.js",
     "static/media/Stavanger1.jpg": "/portfolio/static/media/Stavanger1.1e8dba649fc315a4c96a.jpg",
     "static/media/Solarsystem.jpg": "/portfolio/static/media/Solarsystem.76d91c38f6bdf7e30451.jpg",
     "static/media/Christmas.jpg": "/portfolio/static/media/Christmas.82a6c3b52de8de98e678.jpg",
@@ -9,11 +9,14 @@
     "static/media/portrait.png": "/portfolio/static/media/portrait.e5e0a2a2f79da497b0f5.png",
     "static/media/RotatingPictures.jpg": "/portfolio/static/media/RotatingPictures.21f54988275285819a30.jpg",
     "index.html": "/portfolio/index.html",
-    "main.dddfe733.css.map": "/portfolio/static/css/main.dddfe733.css.map",
-    "main.7cce6748.js.map": "/portfolio/static/js/main.7cce6748.js.map"
+    "static/media/menuIconBlack.svg": "/portfolio/static/media/menuIconBlack.390b9556fdc744d00080b71bea9f9d28.svg",
+    "static/media/menuIconWhite.svg": "/portfolio/static/media/menuIconWhite.a3f1c1fdaeb0859f5ed6c220a5accc6c.svg",
+    "static/media/menuIconPurple.svg": "/portfolio/static/media/menuIconPurple.5fa090a385e302324d895300ea78de84.svg",
+    "main.f141eb50.css.map": "/portfolio/static/css/main.f141eb50.css.map",
+    "main.cf756a3f.js.map": "/portfolio/static/js/main.cf756a3f.js.map"
   },
   "entrypoints": [
-    "static/css/main.dddfe733.css",
-    "static/js/main.7cce6748.js"
+    "static/css/main.f141eb50.css",
+    "static/js/main.cf756a3f.js"
   ]
 }
