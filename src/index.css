@@ -45,9 +45,13 @@ a {
 }
 
 .link:hover,
-a:hover {
+.link:focus,
+a:hover,
+a:focus {
   color: #e73c7e;
   cursor: pointer;
+  text-decoration: none;
+  outline: none;
 }
 
 header {

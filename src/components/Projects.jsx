@@ -24,14 +24,14 @@ export default function Projects(props) {
     const [projectText, setProjectText] = useState(text[0])
     
     useEffect(() => {
-    setTimeout(() => {
-        setCount(i%5);
-        if (change) {
-            setProjectText(text[count])
-            setPicture(pictures[count])
-        }
-    }, 1500);
-  }, [count]);
+        setTimeout(() => {
+            setCount(i%5);
+            if (change) {
+                setProjectText(text[count])
+                setPicture(pictures[count])
+            }
+        }, 1500)
+    }, [count]);
 
     function showImage(image, txt) {
         change = false;
@@ -54,9 +54,7 @@ export default function Projects(props) {
                 <div className={`${styles.projects}`}>
                     <a 
                         onMouseEnter={() => showImage(Picture1, myData.project1)}
-                        onTouchEnter={() => showImage(Picture1, myData.project1)}
                         onMouseLeave={() => hideImage()}
-                        onTouchLeave={() => hideImage()}
                         className={props.darkMode ? `dark ${class2}`: `${class2}`}
                         href="https://arild-bm.github.io/Parallax-Website/"
                         rel="noreferrer"
