@@ -1,6 +1,9 @@
 import Projects from './components/Projects';
 import './index.css';
 import './styles/toggler.css'
+import MenuIconBlack from '../src/images/menuIconBlack.svg'
+import MenuIconPurple from '../src/images/menuIconPurple.svg'
+import MenuIconWhite from '../src/images/menuIconWhite.svg'
 
 // Libraries
 import {
@@ -27,7 +30,9 @@ import userInfo from './data'
 function App() {
 
   const [darkMode, setDarkMode] = useState(true)
-  
+  const [menuPurple, setMenuPurple] = useState(false);
+  const [showMenu, setShowMenu] = useState(false)
+
   // Toggle between dark mode and light mode
   function toggleDarkMode() {
       setDarkMode(prevMode => !prevMode)
@@ -41,11 +46,24 @@ function App() {
         {/* Static elements */}
         <header className={darkMode ? "dark": ""}>
           <nav className={darkMode ? "dark": ""} >
-            <Link className={`link ${darkMode ? "dark": ""}`} to='/'>Hjem</Link>
-            <Link className={`link ${darkMode ? "dark": ""}`} to='/AboutMe'>Om meg</Link>
-            <Link className={`link ${darkMode ? "dark": ""}`} to='/Skills'>Ferdigheter</Link>
-            <Link className={`link ${darkMode ? "dark": ""}`} to='/Contact'>Kontakt</Link>
-            <a className={darkMode ? "dark": ""} href="https://arild-bm.github.io/" rel="noreferrer" target="_blank">GitHub</a>
+            <div 
+              onClick={() => setShowMenu(false)}
+              onMouseLeave={() => setShowMenu(false)}
+              className={showMenu ? `miniNavbar ${darkMode ? "dark": ""}` : "navbar"}>
+              <Link className={`link ${darkMode ? "dark": ""}`} to='/'>Hjem</Link>
+              <Link className={`link ${darkMode ? "dark": ""}`} to='/AboutMe'>Om meg</Link>
+              <Link className={`link ${darkMode ? "dark": ""}`} to='/Skills'>Ferdigheter</Link>
+              <Link className={`link ${darkMode ? "dark": ""}`} to='/Contact'>Kontakt</Link>
+              <a className={darkMode ? "dark": ""} href="https://arild-bm.github.io/" rel="noreferrer" target="_blank">GitHub</a>
+            </div>
+            <div
+            onMouseEnter={() => setMenuPurple(true)}
+            onMouseLeave={() => setMenuPurple(false)}
+            onClick={() => setShowMenu(prev => !prev)}
+            >
+              {!menuPurple && <img className="menuIcon" src={darkMode ? MenuIconWhite : MenuIconBlack} alt="Menu icon" />}
+              {menuPurple && <img className="menuIconPurple" src={MenuIconPurple} alt="Menu icon" />}
+            </div>
 
             {/* Toggle switch in upper right corner */}
             <div className="toggler" >
