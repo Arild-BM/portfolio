@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.50ff432f.css",
+    "main.css": "/portfolio/static/css/main.308b503b.css",
     "main.js": "/portfolio/static/js/main.cf756a3f.js",
     "static/media/Stavanger1.jpg": "/portfolio/static/media/Stavanger1.1e8dba649fc315a4c96a.jpg",
     "static/media/Solarsystem.jpg": "/portfolio/static/media/Solarsystem.76d91c38f6bdf7e30451.jpg",
@@ -12,11 +12,11 @@
     "static/media/menuIconBlack.svg": "/portfolio/static/media/menuIconBlack.390b9556fdc744d00080b71bea9f9d28.svg",
     "static/media/menuIconWhite.svg": "/portfolio/static/media/menuIconWhite.a3f1c1fdaeb0859f5ed6c220a5accc6c.svg",
     "static/media/menuIconPurple.svg": "/portfolio/static/media/menuIconPurple.5fa090a385e302324d895300ea78de84.svg",
-    "main.50ff432f.css.map": "/portfolio/static/css/main.50ff432f.css.map",
+    "main.308b503b.css.map": "/portfolio/static/css/main.308b503b.css.map",
     "main.cf756a3f.js.map": "/portfolio/static/js/main.cf756a3f.js.map"
   },
   "entrypoints": [
-    "static/css/main.50ff432f.css",
+    "static/css/main.308b503b.css",
     "static/js/main.cf756a3f.js"
   ]
 }
