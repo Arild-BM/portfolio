@@ -55,7 +55,7 @@ function App() {
               <Link className={`link ${darkMode ? "dark": ""}`} to='/Skills'>Ferdigheter</Link>
               <Link className={`link ${darkMode ? "dark": ""}`} to='/Contact'>Kontakt</Link>
               <a className={darkMode ? "dark": ""} href="https://arild-bm.github.io/" rel="noreferrer" target="_blank">GitHub</a>
-              <a className={darkMode ? "dark": ""} href="../../documents/CV.pdf" download rel="noreferrer">CV</a>
+              <a className={darkMode ? "dark": ""} href="CV.pdf" download rel="noreferrer">CV</a>
             </div>
             <div
             onMouseEnter={() => setMenuPurple(true)}
