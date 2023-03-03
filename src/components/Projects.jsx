@@ -5,6 +5,7 @@ import Picture2 from '../images/Stavanger2.jpg'
 import Picture3 from '../images/Solarsystem.jpg'
 import Picture4 from '../images/RotatingPictures.jpg'
 import Picture5 from '../images/Christmas.jpg'
+import Picture6 from '../images/Quizzical.jpg'
 
 import MyContext from "../contexts/MyContext"
 
@@ -15,8 +16,8 @@ setInterval(() => i++, 1500)
 
 export default function Projects(props) {
     const myData = useContext(MyContext);
-    const pictures = [Picture1, Picture2, Picture3, Picture4, Picture5]
-    const text = [myData.project1, myData.project2, myData.project3, myData.project4, myData.project5]
+    const pictures = [Picture1, Picture2, Picture3, Picture4, Picture5, Picture6]
+    const text = [myData.project1, myData.project2, myData.project3, myData.project4, myData.project5, myData.project6]
     const [count, setCount] = useState(i)
     
     const [class2, setClass2] = useState("")
@@ -25,12 +26,13 @@ export default function Projects(props) {
     
     useEffect(() => {
         setTimeout(() => {
-            setCount(i%5);
+            setCount(i%6);
             if (change) {
                 setProjectText(text[count])
                 setPicture(pictures[count])
             }
         }, 1500)
+        // eslint-disable-next-line
     }, [count]);
 
     function showImage(image, txt) {
@@ -92,7 +94,14 @@ export default function Projects(props) {
                         rel="noreferrer"
                         target="_blank">Nedtelling<br />til jul
                     </a>
-                    
+                    <a  
+                        onMouseEnter={() => showImage(Picture6, myData.project6)}
+                        onMouseLeave={() => hideImage()}
+                        className={props.darkMode ? "dark": ""}
+                        href="https://arild-bm.github.io/quizzical/"
+                        rel="noreferrer"
+                        target="_blank">Quizzical
+                    </a>
                 </div>
                 <div className={`${styles.pictureText}`}>
                     <img className={picture !== "" ? styles.image : ""} src={picture} alt="" />

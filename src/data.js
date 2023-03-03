@@ -21,6 +21,7 @@ const userInfo = {
     project3: `Gruppeprosjekt høstferie 2022.`,
     project4: `Oppgave med mer avansert CSS.`,
     project5: `Juleprosjekt med nedtelling til jul og mulighet for å legge inn julehilsener.`,
+    project6: `Quiz-app`,
 }
 
 export default userInfo
