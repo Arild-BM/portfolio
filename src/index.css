@@ -332,7 +332,7 @@ main {
 
   .menuIcon, .menuIconPurple {
     display: block;
-  } 
+  }
 }
 
 .projectpage {
@@ -340,8 +340,19 @@ main {
   min-height: 65vh;
 }
 
+
 /* Colors for dark mode */
 .dark {
   background-color: var(--color-background-darkmode);
   color: var(--color-text-darkmode);
+}
+
+.focus {
+  color: #e73c7e;
+}
+
+@media (max-width: 600px) {
+  .focus {
+    color: unset;
+  }
 }

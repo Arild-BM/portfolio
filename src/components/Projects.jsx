@@ -30,7 +30,8 @@ export default function Projects(props) {
             if (change) {
                 setProjectText(text[count])
                 setPicture(pictures[count])
-                document.getElementById(count).focus()
+                document.getElementById(count===0 ? 5 : count-1).classList.remove("focus")
+                document.getElementById(count).classList.add("focus")
             }
         }, 1500)
         // eslint-disable-next-line
@@ -38,7 +39,9 @@ export default function Projects(props) {
 
     function showImage(image, txt, number) {
         change = false;
-        document.getElementById(number).focus()
+        for (let i=0; i<6 ; i++) {
+            document.getElementById(i).classList.remove("focus")
+        }
         setClass2(`${styles.bold}`)
         setPicture(image)
         setProjectText(txt)
