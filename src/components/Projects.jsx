@@ -116,7 +116,7 @@ export default function Projects(props) {
                 </div>
                 <div className={`${styles.pictureText}`}>
                     <img className={picture !== "" ? styles.image : ""} src={picture} alt="" />
-                    <div className="projecttext">
+                    <div className={`${styles.projecttext}`}>
                         <p>{projectText}</p>
                     </div>
                 </div>
