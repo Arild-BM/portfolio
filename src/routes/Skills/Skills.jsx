@@ -18,6 +18,7 @@ export default function Skills() {
                 <li>{myData.skill4}</li>
                 <li>{myData.skill5}</li>
                 <li>{myData.skill6}</li>
+                <li>{myData.skill7}</li>
             </ul>
         </div>
     )
