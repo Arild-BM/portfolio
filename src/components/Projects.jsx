@@ -1,11 +1,12 @@
 import React, {useState, useContext, useEffect} from 'react'
 import styles from '../styles/projects.module.css';
-import Picture1 from '../images/Stavanger1.jpg'
-import Picture2 from '../images/Stavanger2.jpg'
-import Picture3 from '../images/Solarsystem.jpg'
-import Picture4 from '../images/RotatingPictures.jpg'
-import Picture5 from '../images/Christmas.jpg'
-import Picture6 from '../images/Quizzical.jpg'
+import Picture1 from '../images/Connect4game.jpg'
+import Picture2 from '../images/Stavanger1.jpg'
+import Picture3 from '../images/Stavanger2.jpg'
+import Picture4 from '../images/Solarsystem.jpg'
+import Picture5 from '../images/RotatingPictures.jpg'
+import Picture6 from '../images/Christmas.jpg'
+import Picture7 from '../images/Quizzical.jpg'
 
 import MyContext from "../contexts/MyContext"
 
@@ -16,7 +17,7 @@ setInterval(() => i++, 1500)
 
 export default function Projects(props) {
     const myData = useContext(MyContext);
-    const pictures = [Picture1, Picture2, Picture3, Picture4, Picture5, Picture6]
+    const pictures = [Picture1, Picture2, Picture3, Picture4, Picture5, Picture6, Picture7]
     const text = [myData.project1, myData.project2, myData.project3, myData.project4, myData.project5, myData.project6]
     const [count, setCount] = useState(i)
     
@@ -26,11 +27,11 @@ export default function Projects(props) {
     
     useEffect(() => {
         setTimeout(() => {
-            setCount(i%6);
+            setCount(i%7);
             if (change) {
                 setProjectText(text[count])
                 setPicture(pictures[count])
-                document.getElementById(count===0 ? 5 : count-1).classList.remove("focus")
+                document.getElementById(count===0 ? 6 : count-1).classList.remove("focus")
                 document.getElementById(count).classList.add("focus")
             }
         }, 1500)
@@ -39,7 +40,7 @@ export default function Projects(props) {
 
     function showImage(image, txt, number) {
         change = false;
-        for (let i=0; i<6 ; i++) {
+        for (let i=0; i<7 ; i++) {
             document.getElementById(i).classList.remove("focus")
         }
         setClass2(`${styles.bold}`)
@@ -64,51 +65,60 @@ export default function Projects(props) {
                         onMouseLeave={() => hideImage()}
                         className={props.darkMode ? `dark ${class2}`: `${class2}`}
                         id = "0"
-                        href="https://arild-bm.github.io/Parallax-Website/"
+                        href="https://arild-bm.github.io/connect4game/"
                         rel="noreferrer"
-                        target="_blank">Stavanger<br />sentrum
+                        target="_blank">Connect 4 game
                     </a>
                     <a 
                         onMouseEnter={() => showImage(Picture2, myData.project2, 1)}
                         onMouseLeave={() => hideImage()}
-                        className={props.darkMode ? "dark": ""}
+                        className={props.darkMode ? `dark ${class2}`: `${class2}`}
                         id = "1"
-                        href="https://arild-bm.github.io/Stavanger/"
+                        href="https://arild-bm.github.io/Parallax-Website/"
                         rel="noreferrer"
-                        target="_blank">Visit<br />Stavanger
+                        target="_blank">Stavanger<br />sentrum
                     </a>
                     <a 
                         onMouseEnter={() => showImage(Picture3, myData.project3, 2)}
                         onMouseLeave={() => hideImage()}
                         className={props.darkMode ? "dark": ""}
                         id = "2"
-                        href="https://arild-bm.github.io/Solsystem/"
+                        href="https://arild-bm.github.io/Stavanger/"
                         rel="noreferrer"
-                        target="_blank">Solar<br />System
+                        target="_blank">Visit<br />Stavanger
                     </a>
                     <a 
                         onMouseEnter={() => showImage(Picture4, myData.project4, 3)}
                         onMouseLeave={() => hideImage()}
                         className={props.darkMode ? "dark": ""}
                         id = "3"
-                        href="https://arild-bm.github.io/Rotating-pictures/"
+                        href="https://arild-bm.github.io/Solsystem/"
                         rel="noreferrer"
-                        target="_blank">Roterende<br />bilder
+                        target="_blank">Solar<br />System
                     </a>
-                    <a  
+                    <a 
                         onMouseEnter={() => showImage(Picture5, myData.project5, 4)}
                         onMouseLeave={() => hideImage()}
                         className={props.darkMode ? "dark": ""}
                         id = "4"
-                        href="https://arild-bm.github.io/christmas-task/"
+                        href="https://arild-bm.github.io/Rotating-pictures/"
                         rel="noreferrer"
-                        target="_blank">Nedtelling<br />til jul
+                        target="_blank">Roterende<br />bilder
                     </a>
                     <a  
                         onMouseEnter={() => showImage(Picture6, myData.project6, 5)}
                         onMouseLeave={() => hideImage()}
                         className={props.darkMode ? "dark": ""}
                         id = "5"
+                        href="https://arild-bm.github.io/christmas-task/"
+                        rel="noreferrer"
+                        target="_blank">Nedtelling<br />til jul
+                    </a>
+                    <a  
+                        onMouseEnter={() => showImage(Picture7, myData.project7, 6)}
+                        onMouseLeave={() => hideImage()}
+                        className={props.darkMode ? "dark": ""}
+                        id = "6"
                         href="https://arild-bm.github.io/quizzical/"
                         rel="noreferrer"
                         target="_blank">Quizzical

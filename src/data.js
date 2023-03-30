@@ -17,12 +17,13 @@ const userInfo = {
     skill5: `Phyton`,
     skill6: `IT drift`,
     skill7: `Ledelse`,
-    project1: `Oppgave med "Parallax Website".`,
-    project2: `Oppgave med severdigheter i Stavanger.`,
-    project3: `Gruppeprosjekt høstferie 2022.`,
-    project4: `Oppgave med mer avansert CSS.`,
-    project5: `Juleprosjekt med nedtelling til jul og mulighet for å legge inn julehilsener.`,
-    project6: `Quiz-app`,
+    project1: `Connect 4 game`,
+    project2: `Oppgave med "Parallax Website".`,
+    project3: `Oppgave med severdigheter i Stavanger.`,
+    project4: `Gruppeprosjekt høstferie 2022.`,
+    project5: `Oppgave med mer avansert CSS.`,
+    project6: `Juleprosjekt med nedtelling til jul og mulighet for å legge inn julehilsener.`,
+    project7: `Quiz-app`,
 }
 
 export default userInfo
