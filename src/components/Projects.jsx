@@ -67,7 +67,7 @@ export default function Projects(props) {
                         id = "0"
                         href="https://arild-bm.github.io/connect4game/"
                         rel="noreferrer"
-                        target="_blank">Connect 4 game
+                        target="_blank">Connect 4<br />game
                     </a>
                     <a 
                         onMouseEnter={() => showImage(Picture2, myData.project2, 1)}
