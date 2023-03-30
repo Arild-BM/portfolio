@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.e6d3ea8c.css",
-    "main.js": "/portfolio/static/js/main.dbd8ec5b.js",
+    "main.js": "/portfolio/static/js/main.39669be4.js",
     "static/media/Stavanger1.jpg": "/portfolio/static/media/Stavanger1.1e8dba649fc315a4c96a.jpg",
     "static/media/Solarsystem.jpg": "/portfolio/static/media/Solarsystem.76d91c38f6bdf7e30451.jpg",
     "static/media/Christmas.jpg": "/portfolio/static/media/Christmas.82a6c3b52de8de98e678.jpg",
     "static/media/Stavanger2.jpg": "/portfolio/static/media/Stavanger2.bc4503c63752a0155868.jpg",
     "static/media/portrait.png": "/portfolio/static/media/portrait.e5e0a2a2f79da497b0f5.png",
+    "static/media/Connect4game.jpg": "/portfolio/static/media/Connect4game.0bc7f1e476f2e5289799.jpg",
     "static/media/RotatingPictures.jpg": "/portfolio/static/media/RotatingPictures.21f54988275285819a30.jpg",
     "static/media/Quizzical.jpg": "/portfolio/static/media/Quizzical.f21cebefd3048eb83aa0.jpg",
     "index.html": "/portfolio/index.html",
@@ -14,10 +15,10 @@
     "static/media/menuIconWhite.svg": "/portfolio/static/media/menuIconWhite.a3f1c1fdaeb0859f5ed6c220a5accc6c.svg",
     "static/media/menuIconPurple.svg": "/portfolio/static/media/menuIconPurple.5fa090a385e302324d895300ea78de84.svg",
     "main.e6d3ea8c.css.map": "/portfolio/static/css/main.e6d3ea8c.css.map",
-    "main.dbd8ec5b.js.map": "/portfolio/static/js/main.dbd8ec5b.js.map"
+    "main.39669be4.js.map": "/portfolio/static/js/main.39669be4.js.map"
   },
   "entrypoints": [
     "static/css/main.e6d3ea8c.css",
-    "static/js/main.dbd8ec5b.js"
+    "static/js/main.39669be4.js"
   ]
 }
