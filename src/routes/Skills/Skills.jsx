@@ -12,13 +12,19 @@ export default function Skills() {
         <div>
             <h1>Mine ferdigheter:</h1>
             <ul>
-                <li>{myData.skill1}</li>
-                <li>{myData.skill2}</li>
-                <li>{myData.skill3}</li>
-                <li>{myData.skill4}</li>
-                <li>{myData.skill5}</li>
-                <li>{myData.skill6}</li>
-                <li>{myData.skill7}</li>
+                <li>{myData.skill01}</li>
+                <li>{myData.skill02}</li>
+                <li>{myData.skill03}</li>
+                <li>{myData.skill04}</li>
+                <li>{myData.skill05}</li>
+                <li>{myData.skill06}</li>
+                <li>{myData.skill07}</li>
+                <li>{myData.skill08}</li>
+                <li>{myData.skill09}</li>
+                <li>{myData.skill10}</li>
+                <li>{myData.skill11}</li>
+                <li>{myData.skill12}</li>
+                <li>{myData.skill13}</li>
             </ul>
         </div>
     )
